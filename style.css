@@ -1,0 +1,1255 @@
+@font-face{
+    font-family: archi;
+    src: url(archia-light-webfont.woff);
+}
+@font-face{
+    font-family: mont;
+    src: url(PPNeueMontreal-Light.woff);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: "gilroy";
+}
+.main{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+  .cursor{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+    mix-blend-mode: difference;
+  }
+
+.nav{
+    width: 100%;
+    height: 100px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw 8vw;
+    position: fixed;
+   
+    mix-blend-mode: difference;
+    z-index: 9;
+}
+
+.nav-part2{
+    display: flex;
+    gap: 3rem;
+    
+}
+.nav-part2>h4{
+    font-size: 0.9vw;
+    text-transform: uppercase;
+    color: #fff;
+}
+.nav i{
+    font-size: 1.5vw;
+    color: #fff;
+    display: none;
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    position: relative;
+}
+.page1>.page1video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.page1>h1{
+    font-family: archi;
+    position: absolute;
+    bottom: 20%;
+    font-weight: 100;
+    z-index: 9;
+    left: 10%;
+    font-size: 3.5vw;
+    color: #fff;
+    width: 50%;
+}
+.page1 h1::after{
+    content: "";
+    position: absolute;
+    height: 70px;
+    width: 40px;
+    animation: kuch 0.3s infinite linear;
+    background-color: #fff;
+
+}
+.page1 h1 span{
+    display: none;
+    font-family: archi;
+}
+@keyframes kuch {
+    100%{
+        opacity: 0;
+    }
+}
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    /* background-color: rgb(230, 190, 138); */
+    background-color: #fff;
+    position: relative;
+    padding: 8vw 5vw;
+
+}
+.page2>h2{
+    font-size: 1.5vw;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+  font-family: archi;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+   
+
+}
+.page2-content{
+    
+    display: flex;
+    margin-top: 5vw;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.page2-content>.leftside{
+    height: 350px;
+    width: 41%;
+    /* background-color: rgb(239, 239, 247); */
+    position: relative;
+    background-color: rgb(237, 237, 237);
+   
+    border-radius: 10px; 
+   overflow: hidden;
+}
+/* .page2-content>.leftside:hover{
+    height: 430px;
+    width: 44%;
+} */
+.page2-content>.leftside>.blur{
+    height: 100%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.325);
+    backdrop-filter: blur(20px);
+    position: relative;
+    z-index: 9;
+}
+.page2-content>.leftside>img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.page2-content>.rightside{
+    height: 400px;
+    width:45%;
+    background-color: white;
+    /* background-color: blue; */
+}
+
+.page2-content>.rightside>h1{
+    font-size: 3vw;
+    font-weight: 500;
+   
+    font-family: archi;
+    
+}
+.page2-content>.rightside>p{
+    font-size: 1.3vw;
+    font-weight: 300;
+    margin: 2vw 0;
+    font-family:  mont;
+   
+    
+}
+.page2-content>.rightside>button{
+    padding: 14px 30px;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-size: 1.1vw;
+    font-weight: 500;
+    background-color: transparent;
+    margin-left: 0vw;
+}
+
+.page3{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6vw;
+}
+.page3left-side{
+    width: 56%;
+    height: 63%;
+    /* background-color: rgb(237, 160, 160); */
+}
+.page3left-side>h1{
+    font-size: 3.4vw;
+    font-weight: 500;
+   
+    font-family: archi;
+}
+.page3left-side>p{
+    font-size: 1.5vw;
+    font-weight: 300;
+    margin: 2vw 0;
+    font-family:  mont;
+}
+
+
+.page3button{
+    padding: 14px 30px;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-size: 1.1vw;
+    font-weight: 500;
+    background-color: transparent;
+}
+.page3right-side{
+    width: 40%;
+    height: 50%;
+    /* background-color: rgb(120, 199, 63); */
+}
+.page3right-side>.page3video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(svg.png);
+    background-size: cover;
+    background-position: top;
+    padding-bottom: 10vw;
+}
+.page4 > .page4-top {
+    width: 100%;
+    height: 100px;
+}
+
+.page4>.helmet{
+    width: 100%;
+}
+
+.page4>.page4-content-1{
+   
+    width: 100%;
+    /* background-color: blueviolet; */
+    text-align: center;
+   
+}
+
+.page4-content-1 h2{
+      font-size: 3vw;
+      font-weight: 500;
+      font-family: archi;
+}
+.page4-content-1 >p{
+    padding: 3vw 0;
+    font-size: 1.5vw;
+    font-weight: 300;
+    font-family: mont;
+}
+
+.page4-content-1> button{
+    padding: 15px 25px;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-size:  1vw;
+    background-color: transparent;
+}
+.page4-content-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8vw 6vw;
+
+}
+.page4-content-2>h2{
+      font-size: 2vw;
+      font-family: archi;
+      font-weight: 500;
+
+}
+.page4-content-2>video{
+    width: 40%;
+    height: 30%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.page4-content-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8vw 6vw;
+}
+
+.page4-content-3>.part2>h2{
+    font-size: 2vw;
+    font-family: archi;
+    font-weight: 500;
+    flex-direction: column;
+
+}
+.page4-content-3>video{
+  width: 40%;
+  height: 30%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.page4-content-3>.part2>button{
+    padding: 15px 28px;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-size:  1vw;
+    background-color: transparent;
+    margin-top: 4vw;
+    font-size: 1.3vw;
+}
+.hello2{
+    /* background-color: aqua; */
+}
+.hello >h2{
+    font-size: 1.8vw;
+}
+
+.hello2>h3{
+    padding: 0  6vw;
+    font-size: 1.8vw;
+    /* background-color: red; */
+    font-weight: 100;
+    font-family: archi;
+}
+.hello2>button{
+    margin-left:  6vw;
+}
+
+/* .page4>.page4-top{
+    width: 100%;
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/ecosystem_bg.jpg);
+    background-size: cover;
+} */
+
+
+   .page5{ 
+    height: 100vh;
+    width: 100%;
+   
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/ecosystem_bg.jpg);
+    background-size: cover;
+    position: relative;
+    padding-bottom: 5vw;
+   }
+  
+   .heading{
+    width: 100%;
+    height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+   }
+   .heading>h1{
+    font-family: archi;
+    font-size: 1.5vw;
+    color: #fff;
+    word-spacing: 0.5vw;
+    letter-spacing: 0.3vw;
+    font-weight: 300;
+   }
+    .page5>.purapage5{
+        height: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* background-color: aquamarine; */
+       
+    }
+   .page5>.purapage5>.leftpage5{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(255, 212, 127); */
+    padding: 2vw 4vw;
+   }
+   
+   .page5>.purapage5>.leftpage5>h2{
+       font-size: 3.3vw;
+       font-family: archi;
+       color: white;
+       font-weight: 500;
+      
+   }
+   .page5>.purapage5>.leftpage5>p{
+    font-size: 1.5vw;
+    font-family: mont;
+    color: white;
+    font-weight: 500;
+   margin-top: 0.5vw;
+}
+.page5>.purapage5>.leftpage5>button{
+    
+    padding: 15px 40px;
+    border: 2px solid rgba(255, 255, 255, 0.758);
+    border-radius: 50px;
+    background-color: transparent;
+    margin-top: 4vw;
+    color: rgba(255, 255, 255, 0.834);
+    font-size: 1.2vw;
+}
+
+.page5>.purapage5>.rightpage5{
+    width: 50%;
+    height: 100%;
+    /* background-color: lightblue; */
+    display: flex;
+    flex-shrink: 0;
+}
+.page5>.purapage5>.rightpage5>.elem{
+    flex-shrink: 0;
+       width: 70%;
+       height: 95%;
+       /* background-color: aqua; */
+       background-color: rgba(255, 255, 255, 0.182);
+       -webkit-mask-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/ecosystem-box_bg_mob.svg);
+       -webkit-mask-size: cover;
+       -webkit-mask-position: bottom;
+       -webkit-mask-repeat: no-repeat;
+       backdrop-filter: blur(20px);
+       padding: 2vw;
+       margin: 0 3vw;
+   
+}
+.page5>.purapage5>.rightpage5>.elem>img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px;
+}
+.page5>.purapage5>.rightpage5>.elem>h1{
+    font-family: archi;
+    font-size: 3vw;
+    font-weight: 500;
+    margin-top: 1vw;
+
+}
+.page5>.purapage5>.rightpage5>.elem>p{
+    font-family: mont;
+    font-size: 1vw;
+    font-weight: 500;
+    margin-top: 1vw;
+
+}
+.slider{
+    height: 5px;
+    width: 40%;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    background-color: rgb(255, 255, 255);
+    transform: translateX(-50%);
+   
+   
+}
+.slider-in{
+    height: 100%;
+    width: 17vw;
+    background-color: black;
+}
+.page6{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom right,rgb(224,203,245),rgb(234,206,221), rgb(250,198,193));
+    /* border: 10px solid black; */
+     
+}
+.pg6heading{
+    width: 100%;
+    height: 200px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.pg6heading>h1{
+    font-size: 3.2vw;
+    font-family: archi;
+    font-weight: 500;
+}
+.page6center{
+    width: 80%;
+    height: 60vh;
+    /* background-color: rgb(21, 255, 0); */
+    display: flex;
+    border-bottom: 1px solid black;
+    margin: auto;
+
+
+    
+}
+.pag6left{
+    width: 50%;
+    height: 70vh;
+    /* background-color: blue; */
+}
+.pag6right{
+    width: 50%;
+    height: 70vh;
+    /* background-color: rgb(234, 0, 255); */
+}
+.pag6left>h4{
+    font-size: 1.4vw;
+    font-family: archi;
+    font-weight: 500;
+    margin: 3vw 4vw;
+   width: 90%;
+
+}
+.pag6right>h3{
+    font-size: 1.4vw;
+    font-family: mont;
+    font-weight: 100;
+     width: 90%;
+   margin: 3vw 5vw;
+
+}
+.pag6right>h5{
+    font-size: 1.4vw;
+    font-family: mont;
+    margin-left: 7vw;
+
+  
+ 
+   
+}
+.pag6right>h6{
+    font-size: 1.4vw;
+    font-family: mont;
+    margin-left: 7vw;
+    font-weight: 900;
+    margin-top: 1vw;
+
+   
+   
+}
+
+.over{
+    margin:  5vw 10vw;
+}
+
+.over>h2{
+    font-family: archi;
+    font-size: 1.3vw;
+    font-weight: 800;
+}
+.designpage6{
+    width: 80%;
+    height: 80vh;
+    
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.first1{
+    width: 30%;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.645);
+    position: relative;
+}
+.text1{
+    width: 53%;
+     height: 15%;
+     background-color:  #E0DEFE;
+     position: absolute;
+     top: 14%;
+     left: 20%;
+
+     margin: auto;
+    border-radius: 40px;
+
+    
+}
+.text1>h1{
+    
+    font-family: archi;
+    font-size: 2vw;
+    padding: 1vw 1.3vw;
+}
+.first1>p{
+    font-family: mont;
+    position: absolute;
+    font-size: 1.2vw;
+    top: 37%;
+    left: 20%;
+}
+.first2{
+    width: 30%;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.645);
+    position: relative;
+}
+.text2{
+    width: 70%;
+     height: 23%;
+     background-color: #C9E2F9;
+     position: absolute;
+     top: 14%;
+     left: 12%;
+
+     margin: auto;
+    border-radius: 40px;
+
+    
+}
+.text2>h1{
+    
+    font-family: archi;
+    font-size: 2vw;
+    padding: 1vw 1.3vw;
+}
+.first2>p{
+    font-family: archi;
+    position: absolute;
+    font-size: 1.2vw;
+    top: 43%;
+    left: 18%;
+}
+
+
+.first3{
+    width: 30%;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.645);
+    position: relative;
+}
+.text3{
+    width: 58%;
+     height: 35%;
+     background-color: #FED7CD;
+     position: absolute;
+     top: 14%;
+     left: 20%;
+
+     margin: auto;
+    border-radius: 50px;
+
+    
+}
+.text3>h1{
+    
+    font-family: archi;
+    font-size: 2vw;
+    padding: 1vw 1.3vw;
+}
+.first3>p{
+    font-family: mont;
+    position: absolute;
+    font-size: 1.2vw;
+    top: 53%;
+    left: 20%;
+}
+.lasttext{
+    width: 100%;
+    height: 10vh;
+    /* background-color: rgb(217, 113, 148); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.lasttext>h2{
+    font-family: archi;
+    font-weight: 500;
+}
+
+button{
+    padding: 13px 25px;
+    border-radius: 40px;
+    font-size: 1vw;
+    margin: 2vw 10vw;
+    background-color: transparent;
+}
+
+.page7{
+   min-height: 100vh ;
+    width: 100%;
+    /* background-color: lightgreen; */
+}
+
+.page7>h2{
+   text-align: center;
+   font-family: archi;
+   font-weight: 400;
+   letter-spacing: 0.2vw;
+   padding: 4vw 0;
+}
+
+.page7center{
+    width: 80%;
+    height: 60vh;
+    /* background-color: blue; */
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+}
+
+.page7left{
+    width: 45%;
+    height: 50vh;
+    /* background-color: burlywood; */
+}
+.page7left>h1{
+    font-family: archi;
+    font-size: 3vw;
+    padding: 1vw 1vw;
+    font-weight: 400;
+}
+.page7left>p{
+    font-family: mont;
+    font-size: 1.5vw;
+    padding: 1vw 1vw;
+    font-weight: 300;
+}
+.page7right{
+    width: 50%;
+    height: 50vh;
+    /* background-color: rgb(211, 134, 32); */
+    background-image: url(https://www.brain.space/wp-content/uploads/2023/07/DASHBOARD.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.page7logo{
+    width: 100%;
+    height: 35vh;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: center;
+    
+}
+
+.logo1{
+    width: 30%;
+    height: 35vh;
+    /* background-color: rgb(230, 126, 126); */
+}
+.logo1>img{
+    padding: 2vw 17vw;
+}
+.logo1>p{
+    font-family: archi;
+    font-size: 0.9vw;
+   margin-left: 8vw;
+   /* background-color: aqua; */
+   text-align: center;
+}
+
+
+.logo2{
+    width: 30%;
+    height: 35vh;
+    /* background-color: rgba(230, 126, 126, 0.364); */
+}
+.logo2>img{
+    padding: 2vw 11vw;
+}
+.logo2>p{
+    font-family: archi;
+    font-size: 0.9vw;
+   margin-left: 4vw;
+   /* background-color: aqua; */
+   text-align: center;
+   width: 60%;
+}
+.logo3{
+    width: 30%;
+    height: 35vh;
+    /* background-color: rgb(230, 197, 126); */
+}
+.logo3>img{
+    padding: 2vw 8vw;
+}
+.logo3>p{
+    font-family: archi;
+    font-size: 0.9vw;
+   margin-left: -9vw;
+   /* background-color: aqua; */
+   text-align: center;
+}
+
+.secndpart{
+    width: 100%;
+    height: 35vh;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+
+}
+.secndpart>.part1{
+    width: 25%;
+    height: 35vh;
+    /* background-color: rgb(188, 230, 126); */
+}
+.part1>img{
+    padding: 2vw 15vw;
+}
+.part1>p{
+    font-family: archi;
+    font-size: 0.9vw;
+   margin-left: 8vw;
+   /* background-color: rgb(47, 0, 255); */
+   text-align: center;
+}
+.secndpart>.part2{
+    width: 25%;
+    height: 35vh;
+    /* background-color: rgb(230, 228, 126); */
+}
+.part2>img{
+    padding: 2vw 15vw;
+}
+.part2>p{
+    font-family: archi;
+    font-size: 0.9vw;
+   margin-left: 8vw;
+   /* background-color: rgb(97, 207, 207); */
+   text-align: center;
+}
+
+
+.secndpart>.part3{
+    width: 25%;
+    height: 35vh;
+    /* background-color: rgba(230, 126, 126, 0.386); */
+}
+.part3>img{
+    padding: 2vw 15vw;
+}
+.part3>p{
+    font-family: archi;
+    font-size: 0.9vw;
+   margin-left: 8vw;
+   /* background-color: rgb(0, 106, 255); */
+   text-align: center;
+}
+
+.secndpart>.part4{
+    width: 25%;
+    height: 35vh;
+    /* background-color: rgb(130, 17, 17); */
+}
+.part4>img{
+    padding: 2vw 14vw;
+}
+.part4>p{
+    font-family: archi;
+    font-size: 0.9vw;
+   margin-left: 8vw;
+   /* background-color: rgba(0, 255, 255, 0.163); */
+   text-align: center;
+}
+
+.page8{
+
+    min-height: 100vh;
+    width: 100%;
+    background: conic-gradient(rgb(189,240,247),rgb(228,246,200),rgb(249,250,201),rgb(255,198,193),rgb(203,216,253), rgb(189,240,247));
+
+}
+
+
+.page8>h1{
+    font-size: 1.5vw;
+    font-family: archi;
+    font-weight: 400;
+   text-align: center;
+  margin-top: 5vw;
+  padding-top: 6vw;
+     word-spacing: 1vw;
+     letter-spacing: 0.3vw;
+}
+.page8center{
+    width: 100%;
+    height: 60vh;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+}
+.page8left{
+    width: 50%;
+    height: 60vh;
+    /* background-color: chocolate; */
+
+}
+.page8left>h1{
+    font-size: 3vw;
+    font-family: archi;
+    font-weight: 500;
+    padding: 8vw 6vw;
+}
+.page8right{
+    width: 50%;
+    height: 60vh;
+    /* background-color: rgb(181, 130, 93); */
+}
+.page8right>h2{
+    font-size: 2vw;
+    font-family: archi;
+    font-weight: 500;
+    padding-top: 8vw ;
+}
+.page8right>p{
+    font-size: 1.4vw;
+    font-family: mont;
+    font-weight: 500;
+    margin-top: 2vw;
+   
+}
+
+.page8icon{
+    width: 80%;
+    height: 170vh;
+    background-color: rgba(255, 255, 255, 0.475);
+    backdrop-filter: blur(20px);
+    margin: auto;
+
+}
+.page8icon>h1{
+    text-align: center;
+    padding-top: 5vw;
+    font-size: 2vw;
+    font-family: mont;
+    font-weight: 400;
+}
+.icon1{
+    width: 100%;
+    height: 20vh;
+    /* background-color: brown; */
+    margin-top: 4vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.left1{
+    width: 50%;
+    height: 100%;
+    /* background-color: beige; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   padding-left: 10vw;
+}
+.right1{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(226, 226, 93); */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   padding-left: 10vw;
+}
+.circul{
+    width: 60px;
+    height: 60px;
+    /* background-color: blue; */
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid black;
+    padding: 1.3vw;
+    
+}
+.left1>p{
+    font-family: archi;
+    margin-left: 2vw;
+}
+.right1>p{
+    font-family: archi;
+    margin-left: 2vw;
+}
+
+.presure{
+     width: 100%;
+     height: 100vh;
+     /* background-color: coral; */
+     display: flex;
+} 
+.cs1{
+    width: 50%;
+    height: 100vh;
+    /* background-color: rgb(127, 85, 70); */
+} 
+.cs1>h1{
+    font-size: 3vw;
+    font-family: archi;
+    font-weight: 500;
+    padding: 10vw 6vw;
+}
+.cs1>h4{
+    font-size: 1.5vw;
+    font-family: mont;
+    font-weight: 500;
+    padding-left:  6vw;
+    margin-top: -8vw;
+      margin-bottom: 2vw;
+   
+}
+.cs1>p{
+    font-family: archi;
+    font-size: 0.9vw;
+    padding: 1vw 3vw;
+    border-top: 1px solid black;
+    margin-left: 6vw;
+    margin-right: 6vw;
+      
+}
+.cs2{
+    width: 50%;
+    height: 100vh;
+    /* background-color: rgb(44, 29, 24); */
+} 
+.cs2>img{
+    height: 90%;
+    object-fit: cover;
+    padding-left: 13vw;
+    padding-top: 10vw;
+}
+.page9{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/space-mission_bg.jpg");
+    background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.page9>h1{
+    font-size: 1.8vw;
+    font-family: archi;
+    text-align: center;
+    letter-spacing: 0.3vw;
+    word-spacing: 0.5vw;
+    font-weight: 500;
+    padding-top: 3vw;
+    
+}
+.page9center{
+    width: 100%;
+    height: 80vh;
+    /* background-color: rgb(191, 156, 156); */
+    display: flex;
+}
+.page9center>.one{
+    width: 50%;
+    height: 80vh;
+    /* background-color: cornflowerblue; */
+
+}
+.page9center>.one>h1{
+    font-family: archi;
+    font-size: 3vw;
+    font-weight: 600;
+    padding: 6vw 4vw;
+}
+.page9center>.one>p{
+    /* background-color: aqua; */
+    font-size: 1.5vw;
+    font-family: mont;
+    border: none;
+    margin-top: -5vw;
+     padding-left: 4vw;
+}
+.page9center>.one>h4{
+    font-family: archi;
+    font-size: 1.5vw;
+    padding: 3vw 3vw;
+}
+.page9center>.two{
+    width: 50%;
+    height: 80vh;
+    /* background-color: rgb(16, 62, 148); */
+
+}
+.page9center>.two>.vc{
+    width: 70%;
+    height: 40vh;
+    /* background-color: aquamarine; */
+    border-radius: 35%;
+  margin: 7vw 5vw;
+  overflow: hidden;
+ 
+}
+.page9center>.two>.vc>video{
+    object-fit: cover;
+    width: 100%;
+    
+}
+
+.page10{
+    width: 100%;
+    height: 100vh;
+    /* background-color: cornflowerblue; */
+
+}
+.page10>h1{
+    text-align: center;
+    font-size: 1.8vw;
+    font-family: archi;
+    letter-spacing: 0.1vw;
+    padding-top: 5vw;
+}
+.images{
+    width: 100%;
+    height: 80px;
+    /* background-color: bisque; */
+    margin-top: 5vw;
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+   
+}
+
+.page10>h3{
+    text-align: center;
+    font-family: archi;
+    font-size: 1.6vw;
+    font-weight: 500;
+    margin-top: 3vw;
+}
+.page11{
+    width: 100%;
+    height: 140vh;
+    background: linear-gradient(to bottom right, rgb(248,177,174),rgb(148,160,241));
+    display: flex;
+}
+.page11text{
+      width: 50%;
+      height: 80vh;
+      /* background-color: rgb(94, 101, 112); */
+}
+.page11text>h1{
+    font-size: 3vw;
+    font-family: archi;
+    font-weight: 500;
+    color: #fff;
+    padding: 12vw 5vw;
+}
+.page11text>p{
+    font-size: 1.5vw;
+    font-family: mont;
+    font-weight: 100;
+    color: #fff;
+    padding-left: 5vw;
+    margin-top: -10vw;
+}
+.page11from{
+    width: 50%;
+    height: 140vh;
+    /* background-color: rgb(49, 87, 157); */
+}
+form>select{
+    padding: 1.3vw 3vw;
+    font-size: 1.5vw;
+    font-family: mont;
+    margin-left: 5vw;
+    margin-top: 12vw;
+    border-radius: 20px;
+    border: none;
+    background-color: #ffffff7e;
+}
+
+
+form>input{
+    padding: 1.3vw 3vw;
+    font-size: 1.5vw;
+    font-family: mont;
+    margin-left: 5vw;
+    border-radius: 20px;
+    border: none;
+    background-color: #ffffff7e;
+    
+}
+
+.page11from>button{
+    margin-left: 5vw;
+    background-color: transparent;
+}
+.page11from>p{
+    margin-left: 5vw;
+    font-family: archi;
+    font-size: 1vw;
+}
+
+.page12{
+    width: 100%;
+    height: 60vh;
+ 
+} 
+.footer1{
+    width: 100%;
+    height: 50vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4vw;
+}
+.footer1>.text{
+    display: flex;
+   gap: 2vw; 
+}
+.footer1>.text>h4{
+    font-family: archi;
+    font-size: 0.8vw;
+   text-transform: uppercase;
+}
+
+.footer2{
+    width: 100%;
+    height: 50vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 4vw;
+}
+.footer2>.icons>i{
+   margin-left: 2vw;
+   font-size: 1.6vw;
+}
+.footer2>.mes>p{
+    font-family: archi;
+    font-size: 0.8vw;
+   text-transform: uppercase;
+   font-weight: 700;
+}
